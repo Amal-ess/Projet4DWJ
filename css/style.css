@@ -1,0 +1,100 @@
+/*font-family: 'Dancing Script', cursive;
+font-family: 'Great Vibes', cursive;
+font-family: 'Allerta Stencil', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Open Sans Condensed', sans-serif;*/
+
+body{
+font-family: 'Roboto Condensed', sans-serif;
+}
+
+nav .brand-logo{
+font-family: 'Great Vibes', cursive;
+font-size: 38px;	
+}
+
+strong {
+	font-weight: bold;
+}
+
+
+.bloc {
+position:relative;
+}
+
+
+.responsive-img{
+z-index:1;
+}
+
+.comment{
+position: absolute;
+top: 150px;
+left: 200px;
+height: 430px;
+z-index: 2;
+font-family: 'Roboto Condensed', sans-serif;
+color: rgba(255,255,255,0.4);
+text-transform: uppercase;
+}
+
+.soustitre{
+font-family: 'Open Sans Condensed', sans-serif;
+color: rgba(255,255,255,0.2);
+}
+
+.article-content{
+text-align: justify;
+}
+
+.title-mob{
+display: none;	
+}
+
+.title-article{
+color: rgba(0,0,0,0.8);
+font-family: 'Open Sans Condensed', sans-serif;
+text-transform: uppercase;
+letter-spacing: .2rem;
+}
+
+.sign{
+color: #757575;
+text-transform: uppercase;
+}
+
+.sign span{
+	font-weight: bold;
+}
+
+.commod{
+color: red;
+}
+
+@media screen and (max-width: 992px) /*tablette*/
+{
+.side-nav {
+    background-color: rgba(255,255,255,0.6);
+    text-transform: uppercase;
+    font-size: 22px;
+}
+.comment{
+display:none;
+}
+.soustitre{
+	display:none;
+}
+
+.title-mob{
+display: block;
+font-family: 'Roboto Condensed', sans-serif;
+color: rgba(0,0,0,0.8);
+text-transform: uppercase;
+font-size: 35px;
+margin:20px;
+text-align: center;
+text-decoration: overline underline #c2185b;
+}
+
+}
+
