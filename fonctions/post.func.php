@@ -2,32 +2,19 @@
 
 function get_posts()
 
-{
-
-
-try
-{
-    $bdd = new PDO('mysql:host=localhost;dbname=blog;charset=utf8', 'root', 'root');
-}
-catch(Exception $e)
-{
-        die('Erreur : '.$e->getMessage());
-}
-
+global $bdd;
 // On récupère les billets
 $req = $bdd->query("
 
 	SELECT * FROM posts
 	WHERE posts.id='{$_GET['id']}'
 	
-
 ");
-
-
 	$result = $req ->fetchObject();
 	return $result;
 
 }
+
 
 function comments($pseudo,$comment){
 
